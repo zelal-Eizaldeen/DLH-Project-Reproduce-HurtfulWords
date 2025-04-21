@@ -1,0 +1,8 @@
+Keras
+tensorflow
+protobuf
+pandas
+scikit-learn
+numpy
+pyyaml
+tqdm
