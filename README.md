@@ -8,3 +8,11 @@ Step1: Download the MIMIC3 data from the physionet.org site, you ca use the belo
 
 And unzip them:
 !unzip <input_location>/mimic-iii-clinical-database-1.4.zip -d <output_location>
+
+Follow the instructions on [this GitHub link](https://github.com/YerevaNN/mimic3-benchmarks) to create the "mimic3-benchmark" folder structure and the files within.
+
+- i. Clone the GitHub Repository:
+`git clone https://github.com/YerevaNN/mimic3-benchmarks/
+cd mimic3-benchmarks/`
+
+-ii. Install the requirements with pip install -r requirements.txt. (The requirements.txt file wuthin the above mentioedn link states outdated versions. We used latest versions while running on Google Colab, and those are listed in the requirements.txt on this GitHub page within "mimic3-benchmarks/mimicbenchmark/scripts" folder.
