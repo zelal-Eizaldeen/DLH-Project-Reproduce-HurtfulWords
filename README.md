@@ -34,12 +34,12 @@ We did this step to be able to get the phenotyping label related file. You can e
 - **ii.** Install the requirements with  the below command (The requirements.txt file that comes within the cloned repository states outdated versions. We used latest versions while running on Google Colab, and those are listed in the requirements.txt on this GitHub page within "mimic3-benchmark/mimicbenchmark" folder.
 
   ```python
-  pip install -r requirements.txt
+  !pip install -r requirements.txt
   ```
 
 - iii. Follow all 5 steps under "Building the benchmark". Please note that to reproduce our code and results, you will have to download the extract_subject.py from our folder "mimic3-benchmark/mimicbenchmark/scripts" where we process and proceed with subjects that we have gathered notes data for.
 
-OR run the below script cell by cell on Google Colab:
+**OR** run the below script cell by cell on Google Colab:
 
 mimic_benchmark_preprocessing.ipynb 
 
