@@ -27,15 +27,15 @@ We did this step to be able to get the phenotyping label related file. You can e
 - **i.** Clone the GitHub Repository:
   
   ```python
-!git clone https://github.com/YerevaNN/mimic3-benchmarks/
-%cd '<your_location>/mimic3-benchmarks/
+  !git clone https://github.com/YerevaNN/mimic3-benchmarks/
+  %cd '<your_location>/mimic3-benchmarks/
   ```
 
--  **ii.** Install the requirements with  the below command (The requirements.txt file that comes within the cloned repository states outdated versions. We used latest versions while running on Google Colab, and those are listed in the requirements.txt on this GitHub page within "mimic3-benchmark/mimicbenchmark" folder.
+- **ii.** Install the requirements with  the below command (The requirements.txt file that comes within the cloned repository states outdated versions. We used latest versions while running on Google Colab, and those are listed in the requirements.txt on this GitHub page within "mimic3-benchmark/mimicbenchmark" folder.
 
-```python
+  ```python
   pip install -r requirements.txt
-```
+  ```
 
 - iii. Follow all 5 steps under "Building the benchmark". Please note that to reproduce our code and results, you will have to download the extract_subject.py from our folder "mimic3-benchmark/mimicbenchmark/scripts" where we process and proceed with subjects that we have gathered notes data for.
 
