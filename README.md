@@ -8,22 +8,23 @@ Please note that we ran all the steps on Google Colab and thus have also given t
 
 **Step 1: Data Downloads and Decompress**
 
-- **i.** Download the MIMIC-III data from [physionet.org](https://physionet.org/), provided you've completed the required training.  
+- **i.** Download the MIMIC-III data from [physionet.org](https://physionet.org/), provided you've completed the required training:   
 
   ```python
   !wget -r -N -c -np --user userID --ask-password https://physionet.org/files/mimiciii/1.4/
 
--**ii.** And unzip them:  
+- **ii.** And unzip them:  
 
   ```python
   `!unzip <input_location>/mimic-iii-clinical-database-1.4.zip -d <output_location>`
 
-Step 2:
+**Step 2: Create the MIMIC3 BENCHMARK directory structure** 
 Follow the instructions on [this GitHub link](https://github.com/YerevaNN/mimic3-benchmarks) to create the "mimic3-benchmark" folder structure and the files within.
 
-- i. Clone the GitHub Repository:  
-`git clone https://github.com/YerevaNN/mimic3-benchmarks/`  
-`cd mimic3-benchmarks/`
+- **i.** Clone the GitHub Repository:
+- ```python
+    !git clone https://github.com/YerevaNN/mimic3-benchmarks/`  
+     cd mimic3-benchmarks/`
 
 - ii. Install the requirements with  the below command (The requirements.txt file that comes within the cloned repository states outdated versions. We used latest versions while running on Google Colab, and those are listed in the requirements.txt on this GitHub page within "mimic3-benchmark/mimicbenchmark" folder.  
   `pip install -r requirements.txt` 
