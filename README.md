@@ -3,11 +3,19 @@ This page describes the steps that we executed to reproduce the paper "Hurtful W
 
 Original publication: [here](https://https://dl.acm.org/doi/abs/10.1145/3368555.3384448) 
 
-Step 1: 
--i. Download the MIMIC3 data from the physionet.org site, you ca use the below command, provided you have gone through the training:  
- `!wget -r -N -c -np --user userID --ask-password https://physionet.org/files/mimiciii/1.4/`
 
--ii. And unzip them:  
+Please note that we ran all the steps on Google Colab and thus have also given the steps to run on Google Colab. For other environments, please change them accordingly.
+
+**Step 1: Data Downloads and Decompress**
+
+- **i.** Download the MIMIC-III data from [physionet.org](https://physionet.org/), provided you've completed the required training.  
+
+  ```python
+  !wget -r -N -c -np --user userID --ask-password https://physionet.org/files/mimiciii/1.4/
+
+-**ii.** And unzip them:  
+
+  ```python
   `!unzip <input_location>/mimic-iii-clinical-database-1.4.zip -d <output_location>`
 
 Step 2:
