@@ -46,7 +46,9 @@ This step creates the mimicbenchmark folder structure and "phenotyping folder" w
 
 **OR** run the below script cell by cell on Google Colab:
 
-`mimic3_benchmark_preprocessing.ipynb`
+`mimic3_benchmark_preprocessing.ipynb`  
+
+
 
 
 Now we tried reproducing two parts of the paper:
