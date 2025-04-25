@@ -21,7 +21,11 @@ Please note that we ran all the steps on Google Colab and thus have also given t
   !unzip <input_location>/mimic-iii-clinical-database-1.4.zip -d <output_location>
   ```
 
-**Step 2: Create the MIMIC3 BENCHMARK directory structure** 
+**Step 2: Download the MIMIC files**  
+
+Run preprocessing_dataset.ipynb that downloads the tables PATIENTS, ADMISSIONS, DIAGNOSES ICD, ICUSTAYS, and NOTEEVENTS and joins them and does some processing of some of its fields.
+
+**Step 3: Create the MIMIC3 BENCHMARK directory structure** 
 We did this step to be able to get the phenotyping label related file. You can either follow the instructions on [this GitHub link](https://github.com/YerevaNN/mimic3-benchmarks) to create the "mimic3-benchmark" folder structure and the files within, by going through the below steps, or run our notebook directly on Google Colab which runs all these steps at one pleace.
 
 - **i.** Clone the GitHub Repository:
@@ -41,7 +45,5 @@ We did this step to be able to get the phenotyping label related file. You can e
 
 **OR** run the below script cell by cell on Google Colab:
 
-mimic_benchmark_preprocessing.ipynb 
-
-**Step 3: Download the MIMIC files**
+mimic3_benchmark_preprocessing.ipynb 
   
