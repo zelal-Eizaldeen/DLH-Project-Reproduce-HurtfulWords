@@ -16,7 +16,7 @@ Please note that we ran all the steps on Google Colab and thus have also given t
 
 - **ii.** And unzip them:  
 
- !unzip <input_location>/mimic-iii-clinical-database-1.4.zip -d <output_location>
+  !unzip <input_location>/mimic-iii-clinical-database-1.4.zip -d <output_location>
 
 **Step 2: Create the MIMIC3 BENCHMARK directory structure** 
 We did this step to be able to get the phenotyping label related file. You can either follow the instructions on [this GitHub link](https://github.com/YerevaNN/mimic3-benchmarks) to create the "mimic3-benchmark" folder structure and the files within, by going through the below steps, or run our notebook directly on Google Colab which runs all these steps at one pleace.
