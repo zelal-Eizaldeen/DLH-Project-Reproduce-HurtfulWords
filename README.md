@@ -53,6 +53,6 @@ This step creates the mimicbenchmark folder structure and "phenotyping folder" w
 
 Now we tried reproducing two parts of the paper:
 
-- We identified dangerous latent relationships that are captured by the contextual word embeddings using a fill-in-the-blank method with text from real clinical notes and a log probability bias score quantification.
-- We evaluated performance gaps across different definitions of fairness on several downstream clinical prediction tasks, including the detection of acute and chronic conditions.
+1. We identified dangerous latent relationships that are captured by the contextual word embeddings using a fill-in-the-blank method with text from real clinical notes and a log probability bias score quantification.
+2. We evaluated performance gaps across different definitions of fairness on several downstream clinical prediction tasks, including the detection of acute and chronic conditions.
 
