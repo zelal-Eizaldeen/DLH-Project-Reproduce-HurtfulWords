@@ -47,4 +47,10 @@ This step creates the mimicbenchmark folder structure and "phenotyping folder" w
 **OR** run the below script cell by cell on Google Colab:
 
 `mimic3_benchmark_preprocessing.ipynb`
-  
+
+
+Now we tried reproducing two parts of the paper:
+
+- We identified dangerous latent relationships that are captured by the contextual word embeddings using a fill-in-the-blank method with text from real clinical notes and a log probability bias score quantification.
+- We evaluated performance gaps across different definitions of fairness on several downstream clinical prediction tasks, including the detection of acute and chronic conditions.
+
