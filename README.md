@@ -27,7 +27,7 @@ Run the below script that uses these downloaded files PATIENTS, ADMISSIONS, DIAG
 `preprocessing_dataset.ipynb`
 
 **Step 3: Create the MIMIC3 BENCHMARK directory structure** 
-We did this step to be able to get the phenotyping label related file. You can either follow the instructions on [this GitHub link](https://github.com/YerevaNN/mimic3-benchmarks) to create the "mimic3-benchmark" folder structure and the files within, by going through the below steps, or run our notebook directly on Google Colab which runs all these steps at one pleace.
+This step creates the mimicbenchmark folder structure and "phenotyping folder" within, using the downloaded files- D ICD DIAGNOSES, DIAGNOSES ICD, ICUSTAYS, PATIENTS, and ADMISSIONS and used joins between each of them to relate each subject to the diagnosis labels, across all admissions. You can either follow the instructions on [this GitHub link](https://github.com/YerevaNN/mimic3-benchmarks) to create the "mimic3-benchmark" folder structure and the files within, by going through the below steps, or run our notebook directly on Google Colab which runs all these steps at one place. Whichever method you follow, please note that `extract_subjects.py` and `requirements.txt` would have to be downloaded from this GitHub page within "mimic3-benchmark/mimicbenchmark" folder.
 
 - **i.** Clone the GitHub Repository:
   
@@ -46,5 +46,5 @@ We did this step to be able to get the phenotyping label related file. You can e
 
 **OR** run the below script cell by cell on Google Colab:
 
-mimic3_benchmark_preprocessing.ipynb 
+`mimic3_benchmark_preprocessing.ipynb`
   
