@@ -48,7 +48,12 @@ This step creates the mimicbenchmark folder structure and "phenotyping folder" w
 
 `mimic3_benchmark_preprocessing.ipynb`  
 
+**Step 4: Doenload the Pre-trained models**  
 
+Download the Pretrained models from the original paper https://github.com/MLforHealth/HurtfulWords :
+
+1. Baseline_Clinical_BERT
+2. Adversarially_Debiased_Clinical_BERT (Gender)
 
 
 Now we tried reproducing two parts of the paper:
@@ -56,3 +61,18 @@ Now we tried reproducing two parts of the paper:
 1. We identified dangerous latent relationships that are captured by the contextual word embeddings using a fill-in-the-blank method with text from real clinical notes and a log probability bias score quantification.
 2. We evaluated performance gaps across different definitions of fairness on several downstream clinical prediction tasks, including the detection of acute and chronic conditions.
 
+
+To reproduce the first one, follow steps 5 and 6 as given below:
+
+**Step 5: Filtering and Tokenizing notes**  
+
+Run the below script to limit notes to the types: "Nursing", "Nursing/other", "Physician", and "Discharge summary". Next, concatenate note subsequences starting from the end of each patient’s period of interest, working backwards, until we reach a limit of 30 subsequences. Then restrict notes within the first 48 hours of ICU stay. Deidentify the PII information and drop outpatient notes.
+
+  `filtering_tokenizing_notes.ipynb`
+
+**Step 6: Masking Gender terms and Comparing Log Probability Bias Scores**  
+
+
+Run the below script to MASK tokens in place of geneder terms, calculate the log probability for males and females using he pretrained clinical base line model, compare the log probabilities and derive a bias score:  
+
+ `Final_ResultsLogP_Gender.ipynb`
