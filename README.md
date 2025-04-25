@@ -2,7 +2,8 @@
 
 This page describes the steps that we executed to reproduce the paper "Hurtful Words: Quantifying Biases in Clinical Contextual Word Embeddings".
 
-Original publication: https://dl.acm.org/doi/abs/10.1145/3368555.3384448
+Original publication: https://dl.acm.org/doi/abs/10.1145/3368555.3384448  
+
 If you use this code in your research, please cite the following publication:
 
 Haoran Zhang, Amy X. Lu, Mohamed Abdalla, Matthew McDermott, and Marzyeh Ghassemi. 2020.
@@ -11,11 +12,13 @@ In Proceedings of the ACM Conference on Health, Inference, and Learning (CHIL â€
 Association for Computing Machinery, New York, NY, USA, 110â€“120.
 A publically available version of this paper is also on arXiv.
 
-A publically available version of this paper is also on arXiv-> https://arxiv.org/abs/2003.11515
+A publically available version of this paper is also on arXiv-> https://arxiv.org/abs/2003.11515  
+
 We referred to the links: 
-https://github.com/MLforHealth/HurtfulWords
-and 
-https://github.com/YerevaNN/mimic3-benchmarks
+https://github.com/MLforHealth/HurtfulWords  
+and   
+https://github.com/YerevaNN/mimic3-benchmarks  
+
 
 In this paper, we have tried to reproduce and prove that contextual word embeddings can create bias to favor certain demographic groups over others. We have used the pretrained baseline and adversarial debiased models from the original paper first to capture the embeddings using masked real clinical notes and letting the model fill the masked blanks, and eventually create a log probability bias score quantification. Secondly, use the same models to read the real preprocessed clinical notes to predict the 25 phenotype labels and compare them against the truth labels, come up with fairness metrics of recall, parity, and specificity, and compare these performance metrics against different demographic subgroups. As an extra step, we also fine-tuned the pretrained baseline model with one set of data and then evaluated another dataset using the same model, and later created quantification of the same performance gaps across intersectional demographics.
 
