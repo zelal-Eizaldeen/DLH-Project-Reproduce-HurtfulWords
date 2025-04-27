@@ -80,7 +80,7 @@ Now we tried reproducing two parts of the paper:
 2. We evaluated performance gaps across different definitions of fairness on several downstream clinical prediction tasks, including the detection of acute and chronic conditions.
 
 
-To reproduce the first one, follow steps 5 and 6 as given below:
+To reproduce the first point, follow steps 5 and 6 as given below:
 
 **Step 5: Filtering and Tokenizing notes**  
 
@@ -93,10 +93,10 @@ Run the below script to limit notes(obtained from step 2) to the types: "Nursing
 
 Run the below script to MASK tokens in place of gender terms, calculate the log probability for males and females using the pretrained clinical base line model, compare the log probabilities and derive a bias score:  
 
- `Final_ResultsLogP_Gender.ipynb`
+ `fill_in_the_blank.ipynb`
 
 
-To reproduce the second part, follow steps 7 and 8 as given below:  
+To reproduce the second point, follow steps 7 and 8 as given below:  
 
 **Step 7: Evaluate the pretrained models to calculate the performance gaps**  
 
