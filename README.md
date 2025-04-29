@@ -20,14 +20,14 @@ and
 https://github.com/YerevaNN/mimic3-benchmarks  
 
 
-In this paper, we have tried to reproduce and prove that contextual word embeddings can create bias to favor certain demographic groups over others. We have used the pretrained baseline and adversarial debiased models from the original paper first to capture the embeddings using masked real clinical notes and letting the model fill the masked blanks, and eventually create a log probability bias score quantification. Secondly, use the same models to read the real preprocessed clinical notes to predict the 25 phenotype labels and compare them against the truth labels, come up with fairness metrics of recall, parity, and specificity, and compare these performance metrics against different demographic subgroups. As an extra step, we also fine-tuned the pretrained baseline model with one set of data and then evaluated another dataset using the same model, and later created quantification of the same performance gaps across intersectional demographics.
+In this paper, we have tried to reproduce and prove that contextual word embeddings can create bias to favor certain demographic groups over others. We have used the pretrained baseline and adversarial debiased models from the original paper first to capture the embeddings using masked real clinical notes and letting the model fill the masked blanks, and eventually create a log probability bias score quantification. Secondly, use the same models to read the real preprocessed clinical notes to predict the 25 phenotype labels and compare them against the truth labels, come up with fairness metrics of recall, parity, and specificity, and compare these performance metrics against different demographic subgroups. As an extra step, we also fine-tuned the pretrained baseline model with one set of data and then evaluated another dataset using the same model, and later created quantification of the same performance gaps across intersectional demographics. <br>
 
 Please note that we ran all the steps on Google Colab and thus have also given the steps to run on Google Colab. For other environments, please change them accordingly.
 **Pretrained Models**
 The pretrained BERT models used in our experiments are available to download here:
 
 - [Baseline_Clinical_BERT]([(https://www.cs.toronto.edu/pub/haoran/hurtfulwords/baseline_clinical_BERT_1_epoch_512.tar.gz)])
-- [Adversarially_Debiased_Clinical_BERT (Gender)](https://example.com/Adversarially_Debiased_Clinical_BERT) <b>
+- [Adversarially_Debiased_Clinical_BERT (Gender)](https://example.com/Adversarially_Debiased_Clinical_BERT) <br>
 **Step 1: Data Downloads and Decompress**
 
 - **i.** Download the MIMIC-III data from [physionet.org](https://physionet.org/), provided you've completed the required training:   
