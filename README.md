@@ -34,7 +34,7 @@ The pretrained BERT models used in our experiments are available to download her
 - Run the following commands to clone this repo and install the dependencies.
 
 ```python
-git clone [https://github.com/MLforHealth/HurtfulWords.git](https://github.com/zelal-Eizaldeen/DLH-Project-Reproduce-HurtfulWords.git)
+git clone https://github.com/zelal-Eizaldeen/DLH-Project-Reproduce-HurtfulWords.git
 cd DLH-Project-Reproduce-HurtfulWords/
 pip install -r requirements.txt
 ```
