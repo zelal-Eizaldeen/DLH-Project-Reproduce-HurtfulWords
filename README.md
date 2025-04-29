@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 **Step 2: Dataset Preprocessing**  
 
-Run the below script that uses these downloaded files PATIENTS, ADMISSIONS, DIAGNOSES ICD, ICUSTAYS, and NOTEEVENTS and joins them and does some processing of some of its fields.  
+Run DLH-Project-Reproduce-HurtfulWords/preprocessing_dataset.ipynb cells. 
 `preprocessing_dataset.ipynb`
 
 **Step 3: Create the MIMIC3 BENCHMARK directory structure** 
