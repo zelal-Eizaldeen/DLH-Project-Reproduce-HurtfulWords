@@ -24,9 +24,9 @@ In this paper, we have tried to reproduce and prove that contextual word embeddi
 
 Please note that we ran all the steps on Google Colab and thus have also given the steps to run on Google Colab. For other environments, please change them accordingly.
 **Pretrained Models**
-- The pretrained BERT models used in our experiments are available to download here:
+The pretrained BERT models used in our experiments are available to download here:
 
-- [Baseline_Clinical_BERT]([https://example.com/Baseline_Clinical_BERT](https://www.cs.toronto.edu/pub/haoran/hurtfulwords/baseline_clinical_BERT_1_epoch_512.tar.gz))
+- [Baseline_Clinical_BERT]([(https://www.cs.toronto.edu/pub/haoran/hurtfulwords/baseline_clinical_BERT_1_epoch_512.tar.gz)])
 - [Adversarially_Debiased_Clinical_BERT (Gender)](https://example.com/Adversarially_Debiased_Clinical_BERT)
 **Step 1: Data Downloads and Decompress**
 
