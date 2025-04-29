@@ -26,10 +26,20 @@ Please note that we ran all the steps on Google Colab and thus have also given t
 **Pretrained Models**
 The pretrained BERT models used in our experiments are available to download here:
 - [Baseline_Clinical_BERT](https://www.cs.toronto.edu/pub/haoran/hurtfulwords/baseline_clinical_BERT_1_epoch_512.tar.gz)
-- [Adversarially_Debiased_Clinical_BERT (Gender)](https://www.cs.toronto.edu/pub/haoran/hurtfulwords/adv_clinical_BERT_1_epoch_512.tar.gz) <br><br>
+- [Adversarially_Debiased_Clinical_BERT (Gender)](https://www.cs.toronto.edu/pub/haoran/hurtfulwords/adv_clinical_BERT_1_epoch_512.tar.gz)
+
+  
 **Step 0: Environment and Prerequisites**
+- Before starting, go to the [MIMIC-benchmarks repository](https://github.com/YerevaNN/mimic3-benchmarks), and follow all of the steps in the Building a benchmark section.
+- Run the following commands to clone this repo and install the dependencies.
 
-
+```python
+git clone https://github.com/MLforHealth/HurtfulWords.git
+cd HurtfulWords/
+conda create -y -n hurtfulwords python=3.7
+conda activate hurtfulwords
+pip install -r requirements.txt
+```
 **Step 1: Data Downloads and Decompress**
 
 - **i.** Download the MIMIC-III data from [physionet.org](https://physionet.org/), provided you've completed the required training:   
