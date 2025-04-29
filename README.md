@@ -53,7 +53,7 @@ pip install -r requirements.txt
   !unzip <input_location>/mimic-iii-clinical-database-1.4.zip -d <output_location>
   ```
 
-**Step 2: Download the MIMIC files**  
+**Step 2: Dataset Preprocessing**  
 
 Run the below script that uses these downloaded files PATIENTS, ADMISSIONS, DIAGNOSES ICD, ICUSTAYS, and NOTEEVENTS and joins them and does some processing of some of its fields.  
 `preprocessing_dataset.ipynb`
