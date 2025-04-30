@@ -122,7 +122,7 @@ This step is using the output from step 3- dataset files (mainly listfile.csv) f
 
 Run the below script:  
 
-`Fairness metric_recreation_using pretrained_model_withadversarial.ipynb`
+`fairness_metric_recreation_using_pretrained_model_withadversarial.ipynb`
 
 
 **Step 8: Fine-tune the pretrained baseline model and evaluate on another dataset, and then calculate the performance gaps**  
