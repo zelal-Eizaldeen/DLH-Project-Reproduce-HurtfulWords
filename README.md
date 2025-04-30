@@ -63,6 +63,10 @@ Run DLH-Project-Reproduce-HurtfulWords/preprocessing_dataset.ipynb cells.
 
 **Step 3: Download the Pre-trained models as given at the top**  
 
+
+
+
+
 Now we tried reproducing two parts of the paper:
 
 1. We identified dangerous latent relationships that are captured by the contextual word embeddings using a fill-in-the-blank method with text from real clinical notes and a log probability bias score quantification.
