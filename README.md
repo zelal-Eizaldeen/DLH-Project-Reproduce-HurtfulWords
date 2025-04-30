@@ -58,6 +58,7 @@ pip install -r requirements.txt
 **Step 2: Dataset Preprocessing**  
 
 Run DLH-Project-Reproduce-HurtfulWords/preprocessing_dataset.ipynb cells. 
+
 `preprocessing_dataset.ipynb`
 
 **Step 3: Create the MIMIC3 BENCHMARK directory structure** 
@@ -131,6 +132,6 @@ This step is using the same sources as step 7 is using. In this script, we token
 
 Run the below script:  
 
-`Fairness metric_recreation_after_finetuning_of_preatrained_model&_evaluation_with_extension.ipynb`
+`fairness_metric_recreation_after_finetuning_of_preatrained_model_&_evaluation__with_extension.ipynb`
 
 
