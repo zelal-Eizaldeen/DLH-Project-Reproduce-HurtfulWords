@@ -61,35 +61,7 @@ Run DLH-Project-Reproduce-HurtfulWords/preprocessing_dataset.ipynb cells.
 
 `preprocessing_dataset.ipynb`
 
-**Step 3: Create the MIMIC3 BENCHMARK directory structure** 
-This step creates the mimicbenchmark folder structure and "phenotyping folder" within, using the downloaded files- D ICD DIAGNOSES, DIAGNOSES ICD, ICUSTAYS, PATIENTS, and ADMISSIONS and used joins between each of them to relate each subject to the diagnosis labels, across all admissions. You can either follow the instructions on [this GitHub link](https://github.com/YerevaNN/mimic3-benchmarks) to create the "mimic3-benchmark" folder structure and the files within, by going through the below steps, or run our notebook directly on Google Colab which runs all these steps at one place. Whichever method you follow, please note that `extract_subjects.py` and `requirements.txt` would have to be downloaded from this GitHub page within "mimic3-benchmark/mimicbenchmark" folder.
-
-- **i.** Clone the GitHub Repository:
-  
-  ```python
-  !git clone https://github.com/YerevaNN/mimic3-benchmarks/
-  %cd '<your_location>/mimic3-benchmarks/
-  ```
-
-- **ii.** Install the requirements with  the below command (The requirements.txt file that comes within the cloned repository states outdated versions. We used latest versions while running on Google Colab, and those are listed in the requirements.txt on this GitHub page within "mimic3-benchmark/mimicbenchmark" folder.
-
-  ```python
-  !pip install -r requirements.txt
-  ```
-
-- iii. Follow all 5 steps under "Building the benchmark". Please note that to reproduce our code and results, you will have to download the extract_subject.py from our folder "mimic3-benchmark/mimicbenchmark/scripts" where we process and proceed with subjects that we have gathered notes data for.
-
-**OR** run the below script cell by cell on Google Colab:
-
-`mimic3_benchmark_preprocessing.ipynb`  
-
-**Step 4: Download the Pre-trained models**  
-
-Download the Pretrained models from the original paper https://github.com/MLforHealth/HurtfulWords :
-
-1. Baseline_Clinical_BERT
-2. Adversarially_Debiased_Clinical_BERT (Gender)
-
+**Step 3: Download the Pre-trained models as given at the top**  
 
 Now we tried reproducing two parts of the paper:
 
@@ -97,15 +69,15 @@ Now we tried reproducing two parts of the paper:
 2. We evaluated performance gaps across different definitions of fairness on several downstream clinical prediction tasks, including the detection of acute and chronic conditions.
 
 
-To reproduce the first point, follow steps 5 and 6 as given below:
+To reproduce the first point, follow steps 4 and 5 as given below:
 
-**Step 5: Filtering and Tokenizing notes**  
+**Step 4: Filtering and Tokenizing notes**  
 
 Run the below script to limit notes(obtained from step 2) to the types: "Nursing", "Nursing/other", "Physician", and "Discharge summary". Next, concatenate note subsequences starting from the end of each patient’s period of interest, working backwards, until we reach a limit of 30 subsequences. Then restrict notes within the first 48 hours of ICU stay. Deidentify the PII information and drop outpatient notes.
 
   `filtering_tokenizing_notes.ipynb`
 
-**Step 6: Masking Gender terms and Comparing Log Probability Bias Scores**  
+**Step 5: Masking Gender terms and Comparing Log Probability Bias Scores**  
 
 
 Run the below script to MASK tokens in place of gender terms, calculate the log probability for males and females using the pretrained clinical base line model, compare the log probabilities and derive a bias score:  
@@ -113,7 +85,15 @@ Run the below script to MASK tokens in place of gender terms, calculate the log 
  `fill_in_the_blank.ipynb`
 
 
-To reproduce the second point, follow steps 7 and 8 as given below:  
+To reproduce the second point, follow steps 6, 7, and 8 as given below:  
+
+**Step 6: Create the MIMIC3 BENCHMARK directory structure** 
+This step creates the mimicbenchmark folder structure and "phenotyping folder" within, using the downloaded files- D ICD DIAGNOSES, DIAGNOSES ICD, ICUSTAYS, PATIENTS, and ADMISSIONS and used joins between each of them to relate each subject to the diagnosis labels, across all admissions. We have followed all the steps 1-5 from this Github page: [this GitHub link](https://github.com/YerevaNN/mimic3-benchmarks) to create the "mimic3-benchmark" folder structure. 
+
+Run our script below on Google Colab to clone their Github and run all steps. 
+
+`mimic3_benchmark_preprocessing.ipynb`  
+
 
 **Step 7: Evaluate the pretrained models to calculate the performance gaps**  
 
