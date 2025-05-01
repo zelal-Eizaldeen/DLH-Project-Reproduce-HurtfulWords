@@ -114,6 +114,6 @@ This step is using the same sources as step 6 is using. In this script, we token
 
 Run the below script:  
 
-`fairness_metric_recreation_after_finetuning_of_preatrained_model_&_evaluation__with_extension.ipynb`
+`fairness_metric_recreation_after_finetuning_of_preatrained_model_&_evaluation_with_extension.ipynb`
 
 
