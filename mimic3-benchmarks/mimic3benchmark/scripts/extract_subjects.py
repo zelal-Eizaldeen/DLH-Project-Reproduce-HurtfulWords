@@ -65,7 +65,7 @@ make_phenotype_label_matrix(phenotypes, stays).to_csv(os.path.join(args.output_p
                                                       index=False, quoting=csv.QUOTE_NONNUMERIC)
 
 # Select a consistent subset of 3,300 patients
-custom_subjects_df = pd.read_csv('/content/drive/MyDrive/Payel-DLH-related/DataFiles/cleaned_data/data.csv')  # Replace with actual path which is output of filtering_tokenizing_notes.txt
+custom_subjects_df = pd.read_csv('/content/drive/MyDrive/Payel-DLH-related/DataFiles/cleaned_data/data.csv')  # Replace with actual path which is output of filtering_tokenizing_notes.ipynb script
 selected_subjects = custom_subjects_df['subject_id'].drop_duplicates()
 
 # Filter all relevant dataframes to keep only selected patients
@@ -76,7 +76,7 @@ phenotypes = phenotypes[phenotypes.SUBJECT_ID.isin(selected_subjects)]
 
 print(f'Using only {stays.shape[0]} ICU stays and {selected_subjects.nunique()} unique patients.')
 
-output_dir = '/content/drive/MyDrive/Payel-DLH-related/DataFiles/WiderSampledFiles/' #replace with actual patha where you will wamt to save the filtered files for future reference
+output_dir = '/content/drive/MyDrive/Payel-DLH-related/DataFiles/WiderSampledFiles/' # replace with actual path where you want to save the filtered files for future reference
 
 # Save filtered tables as CSV files
 patients.to_csv(os.path.join(output_dir, 'filtered_patients.csv'), index=False)
