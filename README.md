@@ -28,7 +28,7 @@ The pretrained BERT models used in our experiments are available to download her
 - [Baseline_Clinical_BERT](https://www.cs.toronto.edu/pub/haoran/hurtfulwords/baseline_clinical_BERT_1_epoch_512.tar.gz)
 - [Adversarially_Debiased_Clinical_BERT (Gender)](https://www.cs.toronto.edu/pub/haoran/hurtfulwords/adv_clinical_BERT_1_epoch_512.tar.gz) <br><br>
 
-**Reproducipility**
+**Reproducibility**
   You can follow the steps on ```python DLH-Project-Reproduce-HurtfulWords/test_hurtful_words.ipynb ```<br><br>
 Here are the Steps in details: <br><br>
 **Step 0: Environment and Prerequisites**
