@@ -92,7 +92,7 @@ To reproduce the second point, follow steps 5, 6, and 7 as given below:
 **Step 5: Create the MIMIC3 BENCHMARK directory structure** 
 This step creates the "mimic3-benchmarks" folder structure and "phenotyping folder" within, using the downloaded files- D ICD DIAGNOSES, DIAGNOSES ICD, ICUSTAYS, PATIENTS, and ADMISSIONS and used joins between each of them to relate each subject to the diagnosis labels, across all admissions. We have followed all the steps 1-5 from this Github page:  [MIMIC-benchmarks repository](https://github.com/YerevaNN/mimic3-benchmarks) to create the "mimic3-benchmarks" folder structure. 
 
-Run our script below on Google Colab to clone their Github and run all steps. Just please note that you would need to use our extract_subjects.py from DLH-Project-Reproduce-HurtfulWords/mimic3-benchmarks/mimic3benchmark/scripts and our requirements.txt from DLH-Project-Reproduce-HurtfulWords/mimic3-benchmarks/requirements.txt
+Run our script below on Google Colab to clone their Github and run all steps. Just please note that you would need to use our extract_subjects.py from DLH-Project-Reproduce-HurtfulWords/mimic3-benchmarks/mimic3benchmark/scripts path and our requirements.txt from DLH-Project-Reproduce-HurtfulWords/mimic3-benchmarks path.
 
 `mimic3_benchmark_preprocessing.ipynb`  
 
