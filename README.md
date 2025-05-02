@@ -32,7 +32,7 @@ The pretrained BERT models used in our experiments are available to download her
   You can follow the steps on ```python DLH-Project-Reproduce-HurtfulWords/test_hurtful_words.ipynb ```<br><br>
 Here are the Steps in details: <br><br>
 **Step 0: Environment and Prerequisites**
-- Before starting, go to the [MIMIC-benchmarks repository](https://github.com/YerevaNN/mimic3-benchmarks), and follow all of the steps in the Building a benchmark section.
+
 - Run the following commands to clone this repo and install the dependencies.
 
 ```python
