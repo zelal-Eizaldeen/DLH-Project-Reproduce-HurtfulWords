@@ -20,7 +20,7 @@ and
 https://github.com/YerevaNN/mimic3-benchmarks  
 
 
-In this paper, we have tried to reproduce and prove that contextual word embeddings can create bias to favor certain demographic groups over others. We have used the pretrained baseline and adversarial debiased models from the original paper first to capture the embeddings using masked real clinical notes and letting the model fill the masked blanks, and eventually create a log probability bias score quantification. Secondly, use the same models to read the real preprocessed clinical notes to predict the 25 phenotype labels and compare them against the truth labels, come up with fairness metrics of recall, parity, and specificity, and compare these performance metrics against different demographic subgroups. As an extra step, we also fine-tuned the pretrained baseline model with one set of data and then evaluated another dataset using the same model, and later created quantification of the same performance gaps across intersectional demographics. <br>
+In this paper, we have tried to reproduce and prove that contextual word embeddings can create bias to favor certain demographic groups over others. We have used the pretrained baseline and adversarial debiased models from the original paper first to capture the embeddings using masked real clinical notes and letting the model fill the masked blanks, and eventually create a log probability bias score quantification. Secondly, use the same models to read the real preprocessed clinical notes to predict the 25 phenotype labels and compare them against the truth labels, come up with fairness metrics of recall, parity, and specificity, and compare these performance metrics against different demographic subgroups. As an extra step, we also fine-tuned the pretrained baseline model with one set of data and then evaluated the same model on another dataset, and later created quantification of the same performance gaps across intersectional demographics. <br>
 
 Please note that we ran all the steps on Google Colab and thus have also given the steps to run on Google Colab. For other environments, please change them accordingly. <br><br>
 **Pretrained Models**
@@ -111,7 +111,7 @@ Run the below script:
 **Step 7: Fine-tune the pretrained baseline model and evaluate on another dataset, and then calculate the performance gaps**  
 
 
-This step is using the same sources as step 6 is using. In this script, we tokenize both the train dataset and test dataset notes using BertTokenizer, create datasets, fine-tune the pretrained baseline midel with the train dataset, and evaluate our test dataset using the model. Then we calculate same fairness metrics as described above in step 7. As an extension to the project, we also find the same fairness metrics across inter-sectional demographic groups, like Gender x Ethnicity.
+This step is using the same sources as step 6 is using. In this script, we tokenize both the train dataset and test dataset notes using BertTokenizer, create datasets, fine-tune the pretrained baseline model with the train dataset, and evaluate the model on our test dataset. Then we calculate same fairness metrics as described above in step 7. As an extension to the project, we also find the same fairness metrics across inter-sectional demographic groups, like Gender x Ethnicity.
 
 Run the below script:  
 
